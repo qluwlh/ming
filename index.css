@@ -22,7 +22,7 @@ html, body {
         @supports not (-webkit-touch-callout: none) {
             margin-top: 0;
         }
-        width: 100px;
+        width: 77px;
         align-self: center;
         animation: breathing 1.5s ease-in-out infinite;
     }
