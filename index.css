@@ -20,7 +20,7 @@ html, body {
     .loading__logo {
         margin-top: -54px;
         @supports not (-webkit-touch-callout: none) {
-            margin-top: -31px;
+            margin-top: -15px;
             width: 100px;
         }
         width: 100px;
