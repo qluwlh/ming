@@ -23,7 +23,7 @@ html, body {
             margin-top: -31px;
             width: 100px;
         }
-        width: 77px;
+        width: 100px;
         align-self: center;
         animation: breathing 1.5s ease-in-out infinite;
     }
