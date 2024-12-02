@@ -6,6 +6,12 @@ html, body {
     height: calc(100vh - constant(safe-area-inset-bottom, 0));
     height: calc(100vh - env(safe-area-inset-bottom, 0));
     width: 100%;
+    position: relative;
+}
+.flag {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .app-loading {
     display: flex;
