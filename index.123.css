@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+}
+
+#app {
+    height: calc(100vh - constant(safe-area-inset-bottom, 0));
+    height: calc(100vh - env(safe-area-inset-bottom, 0));
+    width: 100%;
+    position: relative;
+}
+.flag {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.app-loading {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-width: 360px;
+    min-height: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .loading__logo {
+        margin-top: -54px;
+        @supports not (-webkit-touch-callout: none) {
+            margin-top: -11px;
+            width: 100px;
+        }
+        width: 100px;
+        align-self: center;
+        animation: breathing 1.5s ease-in-out infinite;
+    }
+}
+
+@keyframes breathing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
