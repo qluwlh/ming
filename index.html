@@ -11,16 +11,9 @@
             title="ltr"
         />
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-        <script>
-            const isAndroid = /android/i.test(navigator.userAgent);
-            const elements = document.querySelectorAll('.app-loading');
-            if (isAndroid) {
-                elements.forEach(el => el.classList.add('android'));
-            }
-        </script>
+
     </head>
     <body class="theme-light" style="min-height: auto; height: 100vh">
-
         <div id="app" class="fullscreen webviewScreen" style="min-height: auto">
             <div class="flag">
                 <div>1234</div>
@@ -34,5 +27,13 @@
                 />
             </div>
         </div>
+        <script>
+
+            const isAndroid = /android/i.test(navigator.userAgent);
+            const elements = document.querySelectorAll('.app-loading');
+            if (isAndroid) {
+                elements.forEach(el => el.classList.add('android'));
+            }
+        </script>
     </body>
 </html>
