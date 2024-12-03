@@ -28,12 +28,13 @@
             </div>
         </div>
         <script>
-
-            const isAndroid = /android/i.test(navigator.userAgent);
-            const elements = document.querySelectorAll('.app-loading');
-            if (isAndroid) {
-                elements.forEach(el => el.classList.add('android'));
-            }
+            document.addEventListener('DOMContentLoaded', () => {
+                const isAndroid = /android/i.test(navigator.userAgent);
+                const logo = document.querySelector('.app-loading').querySelector('.loading__logo');
+                if (isAndroid && logo) {
+                    logo.classList.add('android');
+                }
+            });
         </script>
     </body>
 </html>
