@@ -22,20 +22,20 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
 
-    .loading__logo {
-        margin-top: -54px;
-        width: 77px;
-        @supports not (-webkit-touch-callout: none) {
-            margin-top: 0;
-        }
-        align-self: center;
-        animation: breathing 1.5s ease-in-out infinite;
+.loading__logo {
+    margin-top: -54px;
+    width: 77px;
+    @supports not (-webkit-touch-callout: none) {
+        margin-top: 0;
     }
-    [data-platform="android"] .loading__logo {
-        margin-top: -11px;
-        width: 100px;
-    }
+    align-self: center;
+    animation: breathing 1.5s ease-in-out infinite;
+}
+[data-platform="android"] .loading__logo {
+    margin-top: -11px;
+    width: 100px;
 }
 
 @keyframes breathing {
