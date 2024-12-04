@@ -32,7 +32,7 @@ html, body {
         align-self: center;
         animation: breathing 1.5s ease-in-out infinite;
     }
-    .loading__logo .android {
+    [data-platform="android"] .loading__logo {
         margin-top: -11px;
         width: 100px;
     }

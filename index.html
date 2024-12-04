@@ -11,7 +11,11 @@
             title="ltr"
         />
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-
+        <script>
+            if (/Android/i.test(navigator.userAgent)) {
+                document.documentElement.setAttribute('data-platform', 'android');
+            }
+        </script>
     </head>
     <body class="theme-light" style="min-height: auto; height: 100vh">
         <div id="app" class="fullscreen webviewScreen" style="min-height: auto">
@@ -27,14 +31,5 @@
                 />
             </div>
         </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const isAndroid = /android/i.test(navigator.userAgent);
-                const logo = document.querySelector('.app-loading').querySelector('.loading__logo');
-                if (isAndroid && logo) {
-                    logo.classList.add('android');
-                }
-            });
-        </script>
     </body>
 </html>
